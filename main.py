@@ -5,7 +5,7 @@ from insta_accounts_selenium import InstaAccountSelenium
 if __name__ == '__main__':
     try:
         account_api = InstaAccountsAPI('login','password')
-        account_api.login()
+        account_api.login_and_post()
     except:
         account_selenium = InstaAccountSelenium('login','password')
         account_selenium.login()
@@ -13,3 +13,6 @@ if __name__ == '__main__':
         account_selenium.upload_image(r"D:\teste_automacao.png")
         account_selenium.image_data('Isto é um teste! Por favor, não interaja!')
         account_selenium.share()
+        
+        
+        
