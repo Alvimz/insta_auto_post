@@ -37,7 +37,7 @@ class InstaAccountSelenium:
                 button_post = self.insta.find_element(By.XPATH,"(//div[contains(@class, 'x9f619') and contains(@class, 'x3nfvp2') and contains(@class, 'xr9ek0c')])[8]")
                 sleep(1)
                 button_post.click()
-                sleep(3)
+                sleep(1)
                 
                 return False
             except:

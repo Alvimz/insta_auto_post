@@ -14,5 +14,15 @@ if __name__ == '__main__':
         account_selenium.image_data('Isto é um teste! Por favor, não interaja!')
         account_selenium.share()
         
-        
-        
+
+"""
+Criar Flask páginas html:❌
+    - Fazer post;
+Salvar informações em um arquivo Json:❌
+    Login e senha!
+Login Selenium:
+    - Esperar arrumar imagem!❌
+✔️
+
+
+"""
