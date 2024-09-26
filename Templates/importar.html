@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contas Instagram - Importar/Exportar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .menu {
+            margin-top: 30px;
+        }
+
+        .menu button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu button:hover {
+            background-color: #555;
+        }
+
+        .line {
+            width: 80%;
+            height: 2px;
+            background-color: black;
+            margin: 20px auto;
+        }
+
+        .form-container {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .form-group {
+            margin: 10px 0;
+        }
+
+        .form-group input[type="text"], .form-group input[type="password"] {
+            font-size: 18px;
+            padding: 10px;
+            width: 200px;
+            margin: 5px;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-left: 10px;
+        }
+
+        .form-group button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin: 10px;
+        }
+
+        .form-group button:hover {
+            background-color: #555;
+        }
+
+        .button-home {
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: space-between;
+            width: 420px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GERENCIADOR DE CONTAS INSTAGRAM</h1>
+    <h2>criado por @gg_alvim</h2>
+
+    <div class="line"></div>
+
+    <!-- Botão para retornar à página inicial -->
+    <div class="button-home">
+        <button onclick="window.location.href='home.html'">Home</button>
+    </div>
+
+    <h2>Importar/Exportar Contas</h2>
+
+    <div class="form-container">
+        <div class="input-container">
+            <!-- Campo de Login -->
+            <div class="form-group">
+                <input type="text" placeholder="Insira o login">
+            </div>
+
+            <!-- Campo de Senha -->
+            <div class="form-group">
+                <input type="password" id="senha" placeholder="Senha">
+                <input type="checkbox" id="mostrarSenha" onclick="togglePassword()"> Mostrar Senha
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button onclick="alert('Adicionado no JSON!')">Adicionar no JSON!</button>
+        </div>
+
+        <div class="form-group">
+            <button onclick="alert('Exportar dados')">EXPORTAR</button>
+        </div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var senha = document.getElementById("senha");
+            if (senha.type === "password") {
+                senha.type = "text";
+            } else {
+                senha.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Contas Instagram - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .menu {
+            margin-top: 30px;
+        }
+
+        .menu button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu button:hover {
+            background-color: #555;
+        }
+
+        .line {
+            width: 80%;
+            height: 2px;
+            background-color: black;
+            margin: 20px auto;
+        }
+
+        .content {
+            font-size: 24px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>GERENCIADOR DE CONTAS INSTAGRAM</h1>
+    <h2>criado por @gg_alvim</h2>
+
+    <div class="line"></div>
+
+    <div class="menu">
+        <button id="btn-postar" onclick="alert('Postar conteúdo')">Postar conteúdo</button>
+        <button id="btn-importar-exportar" onclick="window.location.href='importar.html'">importar/exportar</button>
+        <button id="btn-sobre" onclick="alert('Sobre')">sobre</button>
+    </div>
+
+    <div class="content">
+        <h2>Bem-vindo à página Home</h2>
+        <p>Gerencie suas contas do Instagram de maneira simples e eficiente.</p>
+    </div>
+
+</body>
+</html>
